@@ -1,0 +1,126 @@
+
+body, html {
+  width: 100wh;
+  height: 1000vh;
+  background-color: green;
+  perspective: 1px;
+  text-align: center;
+  overflow-x: hidden;
+  background-position:center;
+  background-image: url("/asset/bilder/background-1.png");
+  background-size: cover;;
+  
+ 
+}
+
+
+
+.nav-menu{
+  color: bisque;
+  
+
+  position: sticky;
+  top: 1px;
+  
+  
+  transform: translateZ(1);
+  display: grid;
+  grid-template-columns:repeat(10,90px);
+  grid-template-rows:repeat(1,50px);
+
+  justify-content:center;
+  align-content:center;
+
+
+
+ border-style:hidden;
+ border-color: darkblue;
+ background-color: transparent;
+}
+
+.item{
+  
+  background-image: url(/asset/bilder/image1.jpg);
+  border-style:solid;
+  border-color:white;
+  background-color: greenyellow;
+}
+
+
+
+ .layer1{
+  width: 200%;
+  height: 200%;
+  
+  
+  background-size: cover;
+  transform: translateZ(-10);
+} 
+
+
+ 
+.layer2{
+  background-color: brown;
+  position: sticky;
+ 
+ 
+} 
+
+
+
+  @media screen and (min-width: 400px) {
+    body {
+      background-color: red;
+    }
+    .nav-menu {
+      grid-template-columns:repeat(8,50px);
+      grid-template-rows:repeat(1,50px);
+      margin: 2px;
+      
+    justify-content:center;
+    align-content: space-evenly;
+    font-size: 2cqw;
+    
+  } 
+  }
+  
+  @media screen and (min-width: 500px) {
+    body {
+      background-color: lightgreen;
+    }
+    .nav-menu {
+      grid-template-columns:repeat(8,12%);
+      grid-template-rows:repeat(1,50px);
+      margin: 2px;
+      
+    justify-content:center;
+    align-content: space-evenly;
+    
+    font-size: calc(1vw + 1vh);
+  } }
+ 
+  @media (min-width: 950px) {
+    .nav-menu {
+      background-color: antiquewhite;
+      grid-template-columns:repeat(8,12%);
+      grid-template-rows:repeat(1,50px);
+    justify-content:center;
+    align-content:space-evenly;
+    padding: 0%;
+    font-size: calc(1vw + 1vh);
+   
+        
+    }}
+    @media (min-width: 1200px) {
+      .nav-menu {
+        background-color: yellow;
+        grid-template-columns:repeat(8,12%);
+        grid-template-rows:repeat(1,50px);
+      justify-content:center;
+      align-content:space-evenly;
+      padding: 0%;
+      font-size: calc(1vw + 1vh);
+      
+     
+          
+      }}
